@@ -3,6 +3,7 @@ from tkinter import ttk
 bg_color = '#5dF'
 STND_FONT =('Arial', 12, "italic")
 TITLE_FONT =('Arial',20, "bold")
+CPYRIGHT_FONT =('Arial',9, "normal")
 window = Tk()
 window.title('Khaled Program')
 window['background'] = bg_color
@@ -30,10 +31,11 @@ crypt_button = Button(text="Crypt Message",font=STND_FONT,bg='#FFC107',width=15,
 crypt_button.place(x=560,y=200)
 
 #------------------------------------------------------------------
-crypt_button = Button(text="Decrypt Message",font=STND_FONT,bg='#F76F8E',width=15,pady=5,fg='#000',border=0,activebackground='#222',activeforeground='#fff')
-crypt_button.place(x=560,y=280)
-
-
+decrypt_button = Button(text="Decrypt Message",font=STND_FONT,bg='#F76F8E',width=15,pady=5,fg='#000',border=0,activebackground='#222',activeforeground='#fff')
+decrypt_button.place(x=560,y=280)
+#------------------------------------------------------------------
+cpright = Label(window,text='Crypt_Decrypt program by khaled melizi all copyright © 2021 preserved ', font=CPYRIGHT_FONT,bg=bg_color)
+cpright.pack(side="bottom")
 
 
 
